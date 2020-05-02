@@ -11,7 +11,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
-@EnableFeignClients
 @SpringBootApplication
 public class AlegiaApplication extends SpringBootServletInitializer {
 

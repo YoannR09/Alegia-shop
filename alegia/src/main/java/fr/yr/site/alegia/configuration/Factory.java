@@ -7,30 +7,30 @@ import org.springframework.stereotype.Component;
 @Component
 public class Factory {
 
-    @Autowired
-    private MicroserviceAdresseLivraisonProxy microserviceAdresseLivraisonProxy;
-    @Autowired
-    private MicroserviceLigneDeCommandeProxy microserviceLigneDeCommandeProxy;
-    @Autowired
-    private MicroserviceCommandeProxy microserviceCommandeProxy;
-    @Autowired
-    private MicroserviceArticleProxy microserviceArticleProxy;
-    @Autowired
-    private MicroserviceCompteProxy microserviceCompteProxy;
-    @Autowired
-    private MicroservicePanierProxy microservicePanierProxy;
-    @Autowired
-    private MicroserviceContenuPanierProxy microserviceContenuPanierProxy;
-    @Autowired
-    MicroserviceCategorie microserviceCategorie;
-    @Autowired
-    private MicroserviceImageProxy microserviceImageProxy;
-    @Autowired
-    private MicroserviceAdresseProxy microserviceAdresseProxy;
-    @Autowired
-    private MicroserviceTailleProxy microserviceTailleProxy;
-    @Autowired
-    private MicroserviceListTaille microserviceListTaille;
+
+    private MicroserviceAdresseLivraisonProxy microserviceAdresseLivraisonProxy = new MicroserviceAdresseLivraisonProxy();
+
+    private MicroserviceLigneDeCommandeProxy microserviceLigneDeCommandeProxy = new MicroserviceLigneDeCommandeProxy();
+
+    private MicroserviceCommandeProxy microserviceCommandeProxy = new MicroserviceCommandeProxy();
+
+    private MicroserviceArticleProxy microserviceArticleProxy = new MicroserviceArticleProxy();
+
+    private MicroserviceCompteProxy microserviceCompteProxy = new MicroserviceCompteProxy();
+
+    private MicroservicePanierProxy microservicePanierProxy= new MicroservicePanierProxy();
+
+    private MicroserviceContenuPanierProxy microserviceContenuPanierProxy= new MicroserviceContenuPanierProxy();
+
+    private MicroserviceCategorie microserviceCategorie= new MicroserviceCategorie();
+
+    private MicroserviceImageProxy microserviceImageProxy= new MicroserviceImageProxy();
+
+    private MicroserviceAdresseProxy microserviceAdresseProxy= new MicroserviceAdresseProxy();
+
+    private MicroserviceTailleProxy microserviceTailleProxy= new MicroserviceTailleProxy();
+
+    private MicroserviceListTaille microserviceListTaille= new MicroserviceListTaille();
 
 
     public MicroserviceLigneDeCommandeProxy getLigneProxy() {
